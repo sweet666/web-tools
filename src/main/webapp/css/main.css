@@ -1,0 +1,104 @@
+.row.content {height: 650px}
+
+.sidenav {
+  background-color: #f1f1f1;
+  height: 100%;
+}
+
+footer {
+  background-color: #555;
+  color: white;
+  padding: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+  .row.content {height: auto;} 
+}
+
+#textInputViewer{
+  position: relative;
+
+  overflow: auto;
+
+	width: 1px;
+	height: 1px;
+	background: #fff;
+	float: left;
+}
+
+.container {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+}
+
+.left_col {
+	display: inline-block;
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+
+.right_col {
+	display: inline-block;
+}
+
+.colors {
+	display: inline-block;
+}
+
+.buttons {
+	margin-left: 40px;
+}
+
+
+.preview {
+	border-style: solid;
+	border-color: black;
+	border-width: 0.5px;
+	width: 865px;
+	margin:0 auto;
+}
+
+.controls {
+	width: 865px;
+	margin:0 auto;
+}
+
+.file-base64 {
+	display: table-caption;
+	margin-left: 20px;
+	width: 350px;
+
+}
+
+input[type="file"] {
+	display: table;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+textarea {
+	width: 400px; 
+	height: 160px;
+}
+
+.fontSel, .measure, .borderSel {
+	visibility: visible;
+}
+
+.main-control {
+	display: inline-flex;
+}

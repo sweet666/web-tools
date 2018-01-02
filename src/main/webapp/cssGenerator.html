@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web tools</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/JavaScript" src="js/makeChanges.js"></script>
+	<script src="js/jscolor.js"></script>
+</head>
+
+<body>
+
+	<nav class="navbar navbar-inverse bg-inverse">
+	    <a class="navbar-brand" href="#">
+	    	<img src="images/html_icon.png" width="30" height="30" class="d-inline-block align-top" alt="">
+		</a>
+
+		<a class="navbar-brand" href="#" style="line-height: 30px;">
+			Web Tools
+		</a>
+	</nav>
+
+	<div class="container-fluid">
+	  <div class="row content">
+	    <div class="col-sm-2 sidenav">
+	      <ul class="nav nav-pills nav-stacked">
+	      	<br/>
+	        <li><a href="index.html">Rich text editor</a></li>
+	        <li class="active"><a href="cssGenerator.html">CSS generator</a></li>
+	        <li><a href="fileToBase.html">File to base64</a></li>
+	      </ul><br>
+	    </div>
+
+	    <div class="col-sm-10">
+
+			<h2 align=center>CSS generator</h2>
+
+			<div class="middle">
+
+				<div class="container">
+					</br>
+					<main class="content">
+						<div class="preview">
+							<div class="left_col">
+								<h3>Enter Text</h3>
+								<form>
+									<textarea rows="10" id="textInput" onclick = "clearArea()" onkeyup="copyTextToDiv()" onblur="loseFocus()">Paste the text you want to modify here.</textarea>
+									<div id="textInputViewer" onclick="gainFocus()" onmouseover="this.style.cursor='text'" onmouseout="this.style.cursor='auto'">123</div>
+								</form>
+							</div>
+
+							<div class="right_col">
+								<h3>View CSS</h3>
+								<form>
+									<textarea rows="10" id="cssOutput" onfocus="this.select()">Copy the CSS Generated here to your stylesheet.</textarea>
+								</form>
+							</div>
+						</div>
+						</br></br>
+
+						<div class="controls">
+							<div class="main-control">
+								<form class="font_style">
+									<select id="fontSel" class="font_family" name="font" onchange="setFontFamily(this.value)">
+										<option value="courier, &quot;courier new&quot;, monospace">Courier</option>
+										<option value="georgia, serif">Georgia</option>
+										<option value="&quot;palatino linotype&quot;, palatino, serif">Palatino</option>
+										<option value="&quot;times new roman&quot;, times, serif">Times New Roman</option>
+										<option value="arial, sans-serif">Arial</option>
+										<option value="helvetica, sans-serif">Helvetica</option>
+										<option value="impact, sans-serif">Impact</option>
+										<option value="&quot;lucida sans unicode&quot;, &quot;lucida grande&quot;, sans-serif">Lucida Sans</option>
+										<option value="&quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif">Tahoma</option>
+										<option value="&quot;trebuchet MS&quot;, sans-serif">Trebuchet MS</option>
+										<option value="verdana, sans-serif" selected="">Verdana</option>
+									</select>
+									<label>Font Size:</label>
+									<input id="fontSize" type="text" size="3" name="font_size" maxlength="3" value="12" onkeyup="setFontSize()">
+									<select id="measure" onchange="setFontSize()">
+									  <option value="px" selected="">px</option>
+									  <option value="em">em</option>
+									</select>
+								</form>
+								</br>
+
+								<div class="buttons">
+									<input type="image" id="bold" name="bold" src="images/bold.gif" onclick="bold()">
+									<input type="image" id="italic" name="italic" src="images/italic.gif" onclick="italic()">
+									<input type="image" id="uline" name="uline" src="images/uline.gif" onclick="uline()">
+									<input type="image" id="sthrough" name="sthrough" src="images/sthrough.gif" onclick="sthrough()">
+									<input type="image" id="allcaps" name="allcaps" src="images/allcaps.gif" onclick="allcaps()">
+									<input type="image" id="smallcaps" name="smallcaps" src="images/smallcaps.gif" onclick="smallcaps()">
+									<input type="image" id="left" name="left" src="images/left_a.gif" onclick="left()">
+									<input type="image" id="center" name="center" src="images/center.gif" onclick="center()">
+									<input type="image" id="right" name="right" src="images/right.gif" onclick="right()">
+									<input type="image" id="justify" name="justify" src="images/justify.gif" onclick="justify()">
+								</div>
+							</div>
+							</br></br>
+
+							<div class="border-style">
+								<label>Border:&nbsp;</label>
+								<select id="borderSel" class="font_family" name="border" onchange="setBorderStyle(this.value)">
+									<option value="None">None</option>
+									<option value="solid">Solid</option>
+									<option value="dotted">Dotted</option>
+									<option value="dashed">Dashed</option>
+									<option value="double">Double</option>
+									<option value="groove">Groove</option>
+								</select>
+								<label>&nbsp;</label>
+								<input id="borderSize" type="number" style="width: 3em" name="border_size" value="1" step="0.5" min="0" max="5" 
+									onchange="setBorderWidth()">
+								<label>px&nbsp;&nbsp;</label>
+								<label>Color:&nbsp;</label>
+								<input class="jscolor" size="5" onchange="borderColor(this.jscolor)" value="4C4A42">
+							</div>
+							</br>
+
+							<div class="colors">
+								<a>Font color: <input class="jscolor" size="5" onchange="fontColor(this.jscolor)" value="4c4a42">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+								<a>BG color:<input class="jscolor" size="5" onchange="bColor(this.jscolor)" value="ffffff"></a>
+							</div></br></br>
+
+							<div class="shadow-style">
+								<a><strong>Text shadow</strong></a></br>
+
+								<a>Horizontal Length:&nbsp;
+									<input id="shadowHor" type="number" style="width: 3em" name="border_size" value="0" step="0.5" min="0" max="10">
+								&nbsp;px</a></br>
+
+								<a>Vertical Length:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<input id="shadowVer" type="number" style="width: 3em" name="border_size" value="0" step="0.5" min="0" max="10">
+								&nbsp;px</a></br>
+
+								<a>Blur Radius:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<input id="shadowRad" type="number" style="width: 3em" name="border_size" value="0" step="0.5" min="0" max="10">
+								&nbsp;px</a></br>
+
+								<a>Shadow Color: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<input class="jscolor" id="shadowColor" size="5" value="BBB6A3"></a></br>
+
+								<button type="button" class="btn btn-info btn-sm" onclick="setShadow()">Set shadow</button>
+
+							</div></br>
+							
+						</div></br>
+					</main>
+				</div>
+			</div>
+	    </div>
+	  </div>
+	</div>
+
+	<footer class="container-fluid">
+	  <p>2017</p>
+	</footer>
+
+	<script>
+		window.onload = function() {
+			if (document.getElementById('textInput').value === 'Paste the text you want to modify here.') {
+				$('#textInput').css('color', 'grey');
+				$('#cssOutput').css('color', 'grey');
+			}
+		}
+	</script>
+
+</body>
+</html>

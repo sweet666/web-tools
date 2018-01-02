@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web tools</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/richText.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+	<nav class="navbar navbar-inverse bg-inverse">
+	    <a class="navbar-brand" href="#">
+	    	<img src="images/html_icon.png" width="30" height="30" class="d-inline-block align-top" alt="">
+		</a>
+
+		<a class="navbar-brand" href="#" style="line-height: 30px;">
+			Web Tools
+		</a>
+	</nav>
+
+	<div class="container-fluid">
+	  <div class="row content">
+	    <div class="col-sm-2 sidenav">
+	      <ul class="nav nav-pills nav-stacked">
+	      	<br/>
+	        <li><a href="index.html">Rich text editor</a></li>
+	        <li><a href="cssGenerator.html">CSS generator</a></li>
+	        <li class="active"><a href="fileToBase.html">File to base64</a></li>
+	      </ul><br>
+	    </div>
+
+	    <div class="col-sm-10">
+
+	    	<h2 align=center>Rich text editor</h2><br/>
+
+	    	<div class="file-base64">
+				
+				<div id="inp-class" style="width: 300px; margin:0 auto;">
+					<label class="btn btn-default">
+					    Browse <input id="inp" type="file" hidden>
+					</label><br/><br/>
+				</div>
+
+				<div id="base64-text" style="width: 510px; margin:0 auto;">
+					<textarea rows="10" style="width: 520px; height: 250px; display: none;" onfocus="this.select()" id="b64"></textarea>
+				</div>
+
+				<div id="base64-image" style="width: 150px; margin:0 auto;">	
+					<img id="img" height="150">
+				</div>
+
+				<script type="text/javascript">
+					function readFile() {
+	  
+					  if (this.files && this.files[0]) {
+					    
+					    var FR= new FileReader();
+					    
+					    FR.addEventListener("load", function(e) {
+					      document.getElementById("img").src = e.target.result;
+					      document.getElementById("b64").innerHTML = e.target.result;
+					    }); 				    
+					    FR.readAsDataURL( this.files[0] );
+					    $("#b64").show()
+					  }  
+					}
+
+					document.getElementById("inp").addEventListener("change", readFile);
+				</script>				
+			</div>
+
+	    </div>
+	  </div>
+	</div>
+
+	<footer class="container-fluid">
+	  <p>2017</p>
+	</footer>
+
+</body>
+
+</html>
