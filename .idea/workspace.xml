@@ -233,7 +233,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1514904885333</updated>
-      <workItem from="1514904886562" duration="286000" />
+      <workItem from="1514904886562" duration="535000" />
     </task>
     <task id="LOCAL-00001" summary="init deploy">
       <created>1514905041933</created>
@@ -242,11 +242,18 @@
       <option name="project" value="LOCAL" />
       <updated>1514905041933</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Deploy">
+      <created>1514905379078</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1514905379078</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="286000" />
+    <option name="totallyTimeSpent" value="535000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
@@ -291,7 +298,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init deploy" />
-    <option name="LAST_COMMIT_MESSAGE" value="init deploy" />
+    <MESSAGE value="Deploy" />
+    <option name="LAST_COMMIT_MESSAGE" value="Deploy" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
