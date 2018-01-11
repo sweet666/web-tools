@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d1dc9d4f-8a27-4f7f-97a6-00c5fed42f29" name="Default" comment="">
+    <list default="true" id="d1dc9d4f-8a27-4f7f-97a6-00c5fed42f29" name="Default" comment="Deploy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" />
     </list>
@@ -18,12 +18,12 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="722">
-              <caret line="127" column="7" lean-forward="true" selection-start-line="127" selection-start-column="7" selection-end-line="127" selection-end-column="7" />
+            <state relative-caret-position="526">
+              <caret line="126" column="0" lean-forward="true" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#textarea#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1515662187536" expanded="true" signature="5502:5513" ph="..." />
+                <marker date="1515662333076" expanded="true" signature="5502:5513" ph="..." />
               </folding>
             </state>
           </provider>
@@ -118,13 +118,6 @@
               <item name="css-generator-tool" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="css-generator-tool" type="b2602c69:ProjectViewProjectNode" />
-              <item name="css-generator-tool" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="css-generator-tool" type="b2602c69:ProjectViewProjectNode" />
@@ -269,7 +262,7 @@
       <workItem from="1514963690071" duration="6114000" />
       <workItem from="1515050039892" duration="3797000" />
       <workItem from="1515661337922" duration="382000" />
-      <workItem from="1515662176803" duration="15000" />
+      <workItem from="1515662176803" duration="156000" />
     </task>
     <task id="LOCAL-00001" summary="init deploy">
       <created>1514905041933</created>
@@ -327,11 +320,18 @@
       <option name="project" value="LOCAL" />
       <updated>1515661613833</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Agent">
+      <created>1515662204031</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1515662204031</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14131000" />
+    <option name="totallyTimeSpent" value="14272000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
@@ -380,9 +380,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init deploy" />
-    <MESSAGE value="Deploy" />
     <MESSAGE value="Chat" />
-    <option name="LAST_COMMIT_MESSAGE" value="Chat" />
+    <MESSAGE value="Agent" />
+    <MESSAGE value="Deploy" />
+    <option name="LAST_COMMIT_MESSAGE" value="Deploy" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -396,7 +397,7 @@
           <folding>
             <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#textarea#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1515662187536" expanded="true" signature="5502:5513" ph="..." />
+            <marker date="1515662333076" expanded="true" signature="5502:5513" ph="..." />
           </folding>
         </state>
       </provider>
@@ -427,7 +428,7 @@
           <folding>
             <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#textarea#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1515662187536" expanded="true" signature="5502:5513" ph="..." />
+            <marker date="1515662333076" expanded="true" signature="5502:5513" ph="..." />
           </folding>
         </state>
       </provider>
@@ -458,7 +459,7 @@
           <folding>
             <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#textarea#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1515662187536" expanded="true" signature="5502:5513" ph="..." />
+            <marker date="1515662333076" expanded="true" signature="5502:5513" ph="..." />
           </folding>
         </state>
       </provider>
@@ -489,7 +490,7 @@
           <folding>
             <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#textarea#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1515662187536" expanded="true" signature="5502:5513" ph="..." />
+            <marker date="1515662333076" expanded="true" signature="5502:5513" ph="..." />
           </folding>
         </state>
       </provider>
@@ -587,12 +588,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="127" column="7" lean-forward="true" selection-start-line="127" selection-start-column="7" selection-end-line="127" selection-end-column="7" />
+        <state relative-caret-position="526">
+          <caret line="126" column="0" lean-forward="true" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#textarea#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1515662187536" expanded="true" signature="5502:5513" ph="..." />
+            <marker date="1515662333076" expanded="true" signature="5502:5513" ph="..." />
           </folding>
         </state>
       </provider>
